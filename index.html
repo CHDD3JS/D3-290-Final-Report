@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>神奇寶貝的有趣事</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    
+    <style>
+/*        定義背景顏色字體顏色框線格式*/
+        
+ 
+        
+        p{
+          width: 50px;
+          height: 20px;
+          padding: 5px;
+          border: 5px solid blue;
+          margin: 20px;
+          background: lightgreen;
+         }
+        
+        input[type="button"]{
+         width: 100px;
+         font-size: 50px;
+        }
+        
+        body{
+            background: rgb(254, 255, 224);
+            color: #c423d1;
+            stroke: rgb(0, 0, 0);
+            stroke-width: 1;
+        };
+        
+        h2{
+            width: 1350px; height: 25px;
+            padding: 16px;
+            border: 5px groove green;
+            margin: 12px;
+            background: lightgreen;
+        };
+        
+    </style>
+
+</head>
+
+<body>
+
+    <!--    定義標題-->
+    <h1 align="center">～&nbsp;神奇寶貝的有趣事&nbsp;～</h1>
+    <h2 align="center" color="blue">七種世代&nbsp;802#神奇寶貝&nbsp;100#已發售遊戲</h2>
+    <!--    貼圖-->
+    
+    <img src="https://s1.52poke.wiki/wiki/thumb/2/21/001Bulbasaur.png/600px-001Bulbasaur.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/7/73/002Ivysaur.png/300px-002Ivysaur.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/a/ae/003Venusaur.png/300px-003Venusaur.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/7/73/004Charmander.png/300px-004Charmander.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/4/4a/005Charmeleon.png/300px-005Charmeleon.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/7/7e/006Charizard.png/300px-006Charizard.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/3/39/007Squirtle.png/300px-007Squirtle.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/0/0c/008Wartortle.png/300px-008Wartortle.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/0/02/009Blastoise.png/300px-009Blastoise.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/5/5d/010Caterpie.png/300px-010Caterpie.png" alt="壞了" width="80" height="80">
+    <img src="https://s1.52poke.wiki/wiki/thumb/c/cd/011Metapod.png/300px-011Metapod.png" alt="壞了" width="80" height="80">
+   <img src="https://s1.52poke.wiki/wiki/thumb/d/d1/012Butterfree.png/300px-012Butterfree.png" alt="壞了" width="80" height="80">
+   
+   <img src="https://s1.52poke.wiki/wiki/thumb/d/df/013Weedle.png/300px-013Weedle.png" alt="壞了" width="80" height="80">
+   <img src="https://s1.52poke.wiki/wiki/thumb/f/f0/014Kakuna.png/300px-014Kakuna.png" alt="壞了" width="80" height="80">
+   <img src="https://s1.52poke.wiki/wiki/thumb/6/61/015Beedrill.png/300px-015Beedrill.png" alt="壞了" width="80" height="80">
+   
+    <a href="https://wiki.52poke.com/wiki/%E7%B2%BE%E9%9D%88%E5%AF%B6%E5%8F%AF%E5%A4%A2%E9%81%8A%E6%88%B2" (target="_new")><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr5-8Ltm2aErfnWzM0u5UiMziB5lZnM1oSMWDYEOELa1JFAVT1" alt="壞了" width="110" height="80"></a>
+ 
+   
+<!--    建立下拉選單-->
+    <select>
+    <option value="妙蛙種子">#001 妙蛙種子 綠色</option>
+    <option value="妙蛙草">#002 妙蛙草 綠色</option>
+    <option value="妙蛙花">#003 妙蛙花 綠色</option>
+    <option value="小火龍">#004 小火龍 紅色</option>
+    <option value="火恐龍">#005 火恐龍 紅色</option>
+    <option value="噴火龍">#006 噴火龍 紅色</option>
+    <option value="傑尼龜">#007 傑尼龜 藍色</option>
+    <option value="卡咪龜">#008 卡咪龜 藍色</option>
+    <option value="水箭龜">#009 水箭龜 藍色</option>
+    <option value="綠毛蟲">#010 綠毛蟲 綠色</option>
+    <option value="鐵甲蛹">#011 鐵甲蛹 綠色</option>
+    <option value="巴大蝶">#012 巴大蝶 白色</option>
+    <option value="獨角蟲">#013 獨角蟲 褐色</option>
+    <option value="鐵殼蛹">#014 鐵殼蛹 黃色</option>
+    <option value="大針蜂">#015 大針蜂 黃色</option>
+    </select>
+
+<hr>
+<hr>
+ 
+<p class="number"></p>
+<input type="button" onclick="guessnumber()" value="選數字">
+
+<script>
+     var M = 15;
+     var N = 1;
+     function guessnumber(){   
+         return d3.select("p.number").text(Math.floor(Math.random()*(M-N+1)+N));
+         };
+</script>
+
+<p class="color"></p>
+<input type="button" onclick="guesscolor()" value="猜顏色">
+
+<script>
+     var index = [0, 1, 2, 3, 4];
+     var color = ["red", "blue", "green", "yellow", "black"]
+     function guesscolor(){   
+         var xScale = d3.scale.ordinal()
+         .domain(index)
+         .range(color);
+         return d3.select("p.color").text(xScale(2));
+         };
+</script>
+
+<hr>
+<hr>
+   
+    <!--建立 svg 畫布-->
+    <svg width="1500" height="1500">
+    </svg>
+    
+<script>
+
+    var w=500;
+    var h=5.9;
+    var R=0.15;
+    
+   //    建立下拉選單
+    d3.select("select").on("change",function(){
+     var value = d3.select("select").property("value");
+     return(value)
+    }); 
+    
+
+
+    //建立 circle and 提示框 and 座標軸
+   
+    
+     d3.select("svg").append("rect").attr({x:80,y:0,width:3,height:600});
+     
+     d3.select("svg").append("text").attr({x:35,y:20,"font-size":20,"font-family":"arial"}).text("體重");
+     d3.select("svg").append("rect").attr({x:80,y:600,width:1000,height:3});
+     
+     d3.select("svg").append("text").attr({x:1040,y:630,"font-size":20,"font-family":"arial"}).text("身高");
+     d3.select("svg").append("line").attr({x1:83,y1:600,x2:160,y2:540,"stroke-width":5});
+
+    
+     d3.select("svg").append("text").attr({x:170,y:540,"font-size":25,"font-family":"arial"}).text("捕獲程度");
+    
+    d3.select("svg").append("circle").attr({cx:0.7*w,cy:6.9*h,r:45*R,fill:"green"}).append("title").text("#001妙蛙種子");
+    d3.select("svg").append("circle").attr({cx:1*w,cy:13*h,r:45*R,fill:"green"}).append("title").text("#002 妙蛙草");
+    d3.select("svg").append("circle").attr({cx:2*w,cy:100*h,r:45*R,fill:"green"}).append("title").text("#003 妙蛙花");
+    d3.select("svg").append("circle").attr({cx:0.6*w,cy:8.5*h,r:45*R,fill:"red"}).append("title").text("#004 小火龍");
+    d3.select("svg").append("circle").attr({cx:1.1*w,cy:19*h,r:45*R,fill:"red"}).append("title").text("#005 火恐龍");
+    d3.select("svg").append("circle").attr({cx:1.7*w,cy:90.5*h,r:45*R,fill:"red"}).append("title").text("#006 噴火龍");
+    d3.select("svg").append("circle").attr({cx:0.5*w,cy:9*h,r:45*R,fill:"blue"}).append("title").text("#007 傑尼龜");
+    d3.select("svg").append("circle").attr({cx:1*w,cy:22.5*h,r:45*R,fill:"blue"}).append("title").text("#008 卡咪龜");
+    d3.select("svg").append("circle").attr({cx:1.6*w,cy:85.5*h,r:45*R,fill:"blue"}).append("title").text("#009 水箭龜");
+    d3.select("svg").append("circle").attr({cx:0.3*w,cy:2.9*h,r:255*R,fill:"green"}).append("title").text("#010 綠毛蟲");
+   
+    //   重疊 #001
+    d3.select("svg").append("circle").attr({cx:0.7*w,cy:9.9*h,r:120*R,fill:"green"}).append("title").text("#011 鐵甲蛹");
+   
+    d3.select("svg").append("circle").attr({cx:1.1*w,cy:32*h,r:45*R,fill:"white"}).append("title").text("#012 巴大蝶");
+   
+//   重疊 #010
+   d3.select("svg").append("circle").attr({cx:0.3*w,cy:3.2*h,r:255*R,fill:"chocolate"}).append("title").text("#013 獨角蟲");
+    d3.select("svg").append("circle").attr({cx:0.6*w,cy:10*h,r:120*R,fill:"yellow"}).append("title").text("#014 鐵殼蛹");
+    d3.select("svg").append("circle").attr({cx:1*w,cy:29.5*h,r:45*R,fill:"yellow"}).append("title").text("#015 大針蜂");
+   
+      
+//    <p></p>
+//
+//<input type="button" onclick="launch()" value="啟動">
+//
+//
+//     var M = 2016;
+//     var N = 1911;
+//     function launch(){   
+//         return d3.select("p").text(Math.floor(Math.random()*(M-N+1)+N));
+//  }
+</script>
+    
+    
+
+
+</body>
+</html>
